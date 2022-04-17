@@ -67,9 +67,7 @@ header h1 a {
 }
 
 .visual {
-    background-image: url(img/Rectangle1.png);
-    width: 100%;
-    background-size: cover;
+    background: url(img/Rectangle1.png) center/cover no-repeat;
     text-align: center;
     padding: 11% 0;
 }
@@ -116,6 +114,7 @@ h2::after {
 .section01 h2 {
     color: #FF8A9C;
     margin-bottom: 5%;
+    
 }
 
 .section01 article {
@@ -125,8 +124,8 @@ h2::after {
     margin-bottom: 3%;
 }
 
-.section01 article:last-child {
-    margin-bottom: 0;
+.section01 article:nth-of-type(2) {
+    flex-flow: row-reverse;
 }
 
 .section01 article img {
@@ -343,9 +342,6 @@ footer p {
 
     .visual {
         padding: 40% 0;
-        background-size: cover;/*疑問　お手本みたいに桜の表示が小さくならない*/
-        background-position: center;
-        
     }
 
     .visual p {
@@ -373,20 +369,15 @@ footer p {
         margin-bottom: 15%;
     }
     
+    .section01 article:nth-of-type(2) {
+        flex-direction: column-reverse;
+    }
+
     .section01 article {
         flex-direction: column-reverse;
         margin-bottom: 15%;
     }
 
-    /*２番目のarticle　nth-child効かない*/
-    /* .section01 article :nth-child(2) { 
-        flex-direction: column;
-    } */
-
-    .section01 .article02 {
-        flex-direction: column;
-    }
-    
     .section01 article img {
         width: 100%;
     }
