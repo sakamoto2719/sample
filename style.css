@@ -1,0 +1,482 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border:  0.5px solid black; */
+    color: #000000;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    padding: 3% 7% 4%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 10px solid #FFB2BE;
+    
+}
+
+header h1 {
+    width: 16%;
+    
+}
+
+header h1 a {
+    text-decoration: none;
+    display: block;
+    color: #FFB2BE;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header-nav {
+    width: 40%;
+}
+
+.header-nav ul {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header-nav li {
+    list-style: none;
+    color: #333333;
+    
+}
+
+.header-nav li a {
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.visual {
+    background-image: url(img/Rectangle1.png);
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    padding: 11% 0;
+}
+
+.visual p {
+    font-size: 4.8rem;
+    font-weight: bold;
+    color: #FFB2BE;
+    width: 42%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    background-color: rgba(255,255,255,0.75);
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 3.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2::before, 
+h2::after {
+    border-top: 2px solid;
+    content: "";
+    width: 14%;
+    display: inline-block;/*横並び*/
+    vertical-align: middle;
+}
+
+h2::before {
+    margin-right: 3%;
+}
+
+h2::after {
+    margin-left: 3%;
+}
+
+.section01 {
+    padding: 6.5%;
+
+}
+
+.section01 h2 {
+    color: #FF8A9C;
+    margin-bottom: 5%;
+}
+
+.section01 article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.section01 article:last-child {
+    margin-bottom: 0;
+}
+
+.section01 article img {
+    width: 48%;
+}
+
+.section01 article .side {
+    width: 48%;
+    align-items: center;
+}
+
+.section01 article .side h3 {
+    font-size: 2.3rem;
+    font-weight: 900;
+    margin-bottom: 3%;
+}
+
+.section01 article .side p {
+    font-size: 1.3rem;
+    line-height: 3rem;
+    margin-bottom: 5%;
+    font-weight: lighter;
+}
+
+.section01 article .side button {
+    padding: 4% 19%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    background-color: #FF8A9C;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    position: relative;
+} 
+
+.section01 article .side button::after {
+    content:"＞";
+    font-size: 0.75rem;
+    display:inline-block;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:90%;
+}
+
+.section02 {
+    background-color: #E6F5ED;
+    padding: 8% 7% 9%;
+}
+
+.section02 h2 {
+    color: #84B4B8;
+    margin-bottom: 5%;
+}
+
+.section02 ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section02 ul li {
+    width: 30%;
+    margin-bottom: 3%;
+    background-color: #ffffff;
+    padding: 1.2% 1.2% 2%;
+    text-align: right;
+}
+
+.section02 ul li:nth-last-child(1),
+.section02 ul li:nth-last-child(2),
+.section02 ul li:nth-last-child(3) {
+    margin-bottom: 0;
+}
+
+.section02 ul li img {
+    margin-bottom: 6%;
+}
+
+.section02 ul li h3 {
+    font-size: 2rem;
+    margin-bottom: 6%;
+    color: #84B4B8;
+    text-align: left;
+}
+
+.section02 ul li p {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    line-height: 3rem;
+    margin-bottom: 3%;
+    text-align: left;
+
+}
+
+.section02 ul li a {
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    text-align: right;
+}
+
+.section03 {
+    background-image: url(img/Rectangle11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10% 15%;
+}
+
+.section03 .inner {
+    background-color: #FFFFFF;
+    padding-top: 6%;
+    padding-bottom: 9%;
+}
+
+.section03 .inner h2 {
+    color: #FF8A9C;
+    margin-bottom: 5%;
+}
+
+.section03 .inner p {
+    width: 58%;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    line-height: 3rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #FFB2BE;
+    
+    position: relative;
+    
+}
+
+footer .footer-inner { 
+    padding-top: 9%;
+    padding-bottom: 2%;
+    text-align: center;
+} 
+
+footer .footer-inner .footer-nav {  
+   align-items: center;
+    margin: 0 auto;
+    margin-bottom: 8%;
+}
+
+footer .footer-inner .footer-nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-inner .footer-nav ul li a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+
+/*li a 全体に擬似要素設定*/
+footer .footer-inner .footer-nav ul li a::after {
+    content: "|";
+    margin: 0 1rem;
+}
+
+footer .footer-inner .footer-nav ul li:last-child a::after {
+    content: none;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 0.6rem;
+}
+
+/*sp用*/
+@media screen and (max-width: 540px) {
+    header {
+        flex-direction: column;
+        border-bottom: 2px solid #FFB2BE;
+    }
+
+    header {
+        padding-right: 5.5%;
+        padding-left: 5.5%;
+    }
+    
+    header h1 {
+        width: auto;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+    
+    header h1 a {
+        font-size: 1.85rem;
+    }
+    
+    .header-nav {
+        width: auto;
+    }
+    
+    .header-nav ul {
+        justify-content: space-between;
+        
+    }
+
+    .header-nav li a {
+        text-decoration: none;
+        font-size: 1.45rem;
+    }
+
+    .visual {
+        padding: 40% 0;
+        background-size: cover;/*疑問　お手本みたいに桜の表示が小さくならない*/
+        background-position: center;
+        
+    }
+
+    .visual p {
+        font-size: 2.2rem;
+        width: 68%;
+        padding-top: 16%;
+        padding-bottom: 16%;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h2::before, 
+    h2::after {
+        width: 18%;
+    }
+
+    .section01 {
+        padding: 15% 6.5% 27%;
+    
+    }
+    
+    .section01 h2 {
+        margin-bottom: 15%;
+    }
+    
+    .section01 article {
+        flex-direction: column-reverse;
+        margin-bottom: 15%;
+    }
+
+    /*２番目のarticle　nth-child効かない*/
+    /* .section01 article :nth-child(2) { 
+        flex-direction: column;
+    } */
+
+    .section01 .article02 {
+        flex-direction: column;
+    }
+    
+    .section01 article img {
+        width: 100%;
+    }
+    
+    .section01 article .side {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .section01 article .side h3 {
+        margin-bottom: 7%;
+        text-align: left;
+    }
+    
+    .section01 article .side p {
+        margin-bottom: 14%;
+        text-align: left;
+    }
+    
+    .section01 article .side button {
+       padding: 5% 30%;
+        margin-bottom: 18%;
+    } 
+    
+    .section02 {
+        padding: 16% 7% 16%;
+    }
+    
+    .section02 h2 {
+        margin-bottom: 16%;
+    }
+    
+    .section02 ul {
+        flex-direction: column;
+        
+    }
+    
+    .section02 ul li {
+        width: auto;
+        margin-bottom: 10%;
+        padding: 5% 5% 3%;
+    }
+    
+    .section02 ul li:nth-last-child(1),
+    .section02 ul li:nth-last-child(2),
+    .section02 ul li:nth-last-child(3) {
+        margin-bottom: 10%;
+    }
+    
+    .section02 ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .section02 ul li p {
+        font-size: 1.3rem;
+        font-weight: lighter;
+        line-height: 3rem;
+        margin-bottom: 3%;
+        text-align: left;
+    
+    }
+    
+    .section02 ul li a {
+        font-size: 1.8rem;
+    }
+
+    .section03 {
+        padding: 16% 7% 16%;
+    }
+    
+    .section03 .inner {
+        padding: 16% 5% 16%;
+    }
+    
+    .section03 .inner h2 {
+        margin-bottom: 13%;
+    }
+    
+    .section03 .inner p {
+        text-align: left;
+        width: auto;
+    }
+
+    footer .footer-inner .footer-nav {
+        margin-bottom: 16%;
+    }
+
+    footer .footer-inner { 
+        padding-top: 15%;
+        padding-bottom: 6%;
+        text-align: center;
+    } 
+}
